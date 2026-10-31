@@ -1,8 +1,3 @@
--- Title: Top Ethereum Senders (Last 24 Hours)
--- Author: scheide
--- Engine: Google BigQuery (Standard SQL)
--- Dataset: bigquery-public-data.crypto_ethereum.transactions
-
 SELECT 
   from_address AS wallet_address,
   COUNT(1) AS transaction_count,
